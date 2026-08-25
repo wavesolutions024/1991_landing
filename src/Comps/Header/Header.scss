@@ -1,0 +1,116 @@
+.header_parent {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 18px black (0, 0, 0, 0, 0.25);
+    position: fixed;
+    top: 0;
+    z-index: 2;
+
+    .header_cont {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            height: 80px;
+        }
+
+        .navlinks {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .navlinks a {
+            text-decoration: none;
+            color: black;
+            transition: 0.3s;
+
+            &:hover {
+                color: #c89b3c;
+            }
+        }
+
+        .btn {
+            background: #c89b3c;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+
+            &:hover {
+                color: black;
+            }
+        }
+
+        .hamburger {
+            cursor: pointer;
+            display: none;
+
+            svg {
+                font-size: 24px;
+                color: black;
+            }
+        }
+    }
+
+    .mobile_responsive {
+        width: 100%;
+        height: calc(100vh - 90px);
+        // background-color: black;
+        background-color: black;
+        position: fixed;
+        top: 90px;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: var(--gap);
+
+        a {
+            text-decoration: none;
+            color: white;
+            padding: 0 4px;
+            gap: var(--gap);
+
+            &:hover {
+                color: #d6b161;
+            }
+        }
+
+        .btn {
+            background: #c89b3c;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+
+            &:hover {
+                color: black;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .header_parent {
+        .header_cont {
+            .navlinks {
+                display: none;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+        }
+    }
+    
+}

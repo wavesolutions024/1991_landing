@@ -1,0 +1,255 @@
+.book_popup_overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(11, 11, 11, 0.72);
+    z-index: 9998;
+}
+
+.book_popup {
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    width: 610px;
+    max-width: 100%;
+    height: 100vh;
+
+    padding: 70px 48px;
+
+    background: var(--black);
+    color: var(--white);
+
+    border-left: 1px solid var(--gold);
+
+    z-index: 9999;
+
+    overflow-y: auto;
+
+    transform: translateX(100%);
+
+    animation: bookPopupSlide 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+
+.book_popup_close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: transparent;
+
+    border: 1px solid rgba(245, 245, 245, 0.25);
+
+    color: var(--white);
+
+    font-size: 24px;
+
+    cursor: pointer;
+
+    transition: var(--transition);
+}
+
+.book_popup_close:hover {
+    color: var(--gold);
+    border-color: var(--gold);
+    transform: rotate(90deg);
+}
+
+
+.book_popup .hero_form_tag {
+    display: block;
+
+    margin-bottom: 25px;
+
+    color: var(--gold);
+
+    font-size: 13px;
+    font-weight: 600;
+
+    letter-spacing: 0.28em;
+}
+
+
+.book_popup h2 {
+    margin: 0;
+
+    color: var(--white);
+
+    font-size: 48px;
+    line-height: 1.15;
+    font-weight: 700;
+}
+
+
+.book_popup form {
+    margin-top: 55px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+}
+
+
+.book_popup .form_group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.book_popup .form_group label {
+    color: var(--white);
+
+    font-size: 12px;
+    font-weight: 500;
+
+    letter-spacing: 0.2em;
+}
+
+
+.book_popup .form_group input,
+.book_popup .form_group select,
+.book_popup .form_group textarea {
+    width: 100%;
+
+    padding: 13px 0;
+
+    background: transparent;
+
+    color: var(--white);
+
+    border: none;
+    border-bottom: 1px solid rgba(245, 245, 245, 0.25);
+
+    outline: none;
+
+    font-family: inherit;
+    font-size: 16px;
+
+    transition: var(--transition);
+}
+
+
+.book_popup .form_group input:focus,
+.book_popup .form_group select:focus,
+.book_popup .form_group textarea:focus {
+    border-color: var(--gold);
+}
+
+
+.book_popup .form_group input::placeholder,
+.book_popup .form_group textarea::placeholder {
+    color: var(--grey);
+}
+
+
+.book_popup .form_row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+
+.book_popup .form_group textarea {
+    resize: vertical;
+    min-height: 110px;
+}
+
+
+.book_popup .submit_btn {
+    width: 100%;
+
+    padding: 18px 20px;
+
+    background: var(--white);
+    color: var(--black);
+
+    border: none;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    letter-spacing: 0.15em;
+
+    cursor: pointer;
+
+    transition: var(--transition);
+}
+
+
+.book_popup .submit_btn:hover {
+    background: var(--gold);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-gold);
+}
+
+
+@keyframes bookPopupSlide {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .book_popup {
+        width: 520px;
+        padding: 60px 35px;
+    }
+
+    .book_popup h2 {
+        font-size: 40px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .book_popup {
+        width: 100%;
+        padding: 55px 22px 35px;
+    }
+
+    .book_popup_close {
+        top: 18px;
+        right: 18px;
+
+        width: 38px;
+        height: 38px;
+    }
+
+    .book_popup h2 {
+        font-size: 32px;
+    }
+
+    .book_popup form {
+        margin-top: 40px;
+        gap: 25px;
+    }
+
+    .book_popup .form_row {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .book_popup .form_group input,
+    .book_popup .form_group select,
+    .book_popup .form_group textarea {
+        font-size: 15px;
+    }
+
+    .book_popup .submit_btn {
+        font-size: 12px;
+    }
+}
