@@ -56,6 +56,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import footerImg from "../../assets/footer.jpeg";
 import axios from "axios";
+import WhatsappButton from "../../Comps/WhatsappButton"
 
 const Home = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -987,6 +988,8 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      <WhatsappButton/>
     </>
   );
 };
