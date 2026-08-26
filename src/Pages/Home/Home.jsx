@@ -70,7 +70,6 @@ const Home = () => {
     tattooStyle: "",
     tattooDescription: "",
     enquiryType: "landing page",
-    budget: "",
   });
 
   const handleChange = (e) => {
@@ -101,7 +100,6 @@ const Home = () => {
           service: "",
           tattooStyle: "",
           tattooDescription: "",
-          budget: "",
         });
       }
 
@@ -252,16 +250,7 @@ const Home = () => {
                   />
                 </div>
 
-                <div className="form_group">
-                  <label>TATTOO BUDGET </label>
-                  <input
-                    name="budget"
-                    onChange={handleChange}
-                    value={form.budget}
-                    type="text"
-                    placeholder="Enter Tattoo Budget"
-                  />
-                </div>
+             
               </div>
 
               <div className="form_group full">

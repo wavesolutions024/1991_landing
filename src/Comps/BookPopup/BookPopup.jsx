@@ -14,7 +14,7 @@ const [form, setForm] = useState({
     tattooStyle: "",
     tattooDescription: "",
     enquiryType: "landing page",
-    budget: "",
+   
   });
 
 
