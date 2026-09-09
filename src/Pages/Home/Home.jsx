@@ -916,7 +916,7 @@ const Home = () => {
 
                 <div className="footer_info_text">
                   <span>BOOK YOUR APPOINTMENT</span>
-                  <a href="tel:+91983019911">+91 8983019911</a>
+                  <a href="tel:+919881742686">+91 9881742686</a>
                 </div>
               </div>
 
