@@ -56,7 +56,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import footerImg from "../../assets/footer.jpeg";
 import axios from "axios";
-import WhatsappButton from "../../Comps/WhatsappButton"
+import WhatsappButton from "../../Comps/WhatsappButton";
 
 const Home = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -125,16 +125,47 @@ const Home = () => {
 
             <p className="sub_title">Art That Stays With You</p>
 
-            <h1>
-              Turn Your Story
+            <h1 className="hero_title">
+              Thinking About<span> Getting Inked?</span>
               <br />
-              <span>Into</span> Timeless Ink
+            </h1>
+            <h1 className="hero_title_2">
+              Don't Think. <span>Get Inked. </span>
             </h1>
 
-            <p className="hero_desc">
-              Premium Custom Tattoos • Cover-Ups • Fine Line • Realism • Black &
-              Grey
-            </p>
+            <div className="hero_desc">
+              <div className="hero_stats">
+                <div className="stat_card">
+                  <div className="stat_icon">
+                    <FaPenNib />
+                  </div>
+                  <div className="stat_text">
+                    <span className="stat_value">50% off</span>
+                    <span className="stat_label">Half Sleeve</span>
+                  </div>
+                </div>
+
+                <div className="stat_card">
+                  <div className="stat_icon">
+                    <FaPaintBrush />
+                  </div>
+                  <div className="stat_text">
+                    <span className="stat_value">40% off</span>
+                    <span className="stat_label">Full Sleeve</span>
+                  </div>
+                </div>
+
+                <div className="stat_card">
+                  <div className="stat_icon">
+                    <FaRing />
+                  </div>
+                  <div className="stat_text">
+                    <span className="stat_value">20% off</span>
+                    <span className="stat_label">Piercing</span>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <div className="hero_btns">
               <button
@@ -249,8 +280,6 @@ const Home = () => {
                     placeholder="Enter Tattoo Style"
                   />
                 </div>
-
-             
               </div>
 
               <div className="form_group full">
@@ -978,7 +1007,7 @@ const Home = () => {
         </div>
       </div>
 
-      <WhatsappButton/>
+      <WhatsappButton />
     </>
   );
 };
