@@ -115,7 +115,7 @@ const Home = () => {
   const [showConsultation, setShowConsultation] = useState(false);
   return (
     <>
-      <div id="consultation" className="hero_parent parent">
+      <div id="consultation" className="hero_parent parent bg-img-cover">
         <div className="hero_cont cont">
           <div className="hero_left">
             <div className="hero_tag">
@@ -160,7 +160,7 @@ const Home = () => {
                     <FaRing />
                   </div>
                   <div className="stat_text">
-                    <span className="stat_value">20% off</span>
+                    <span className="stat_value">40% off</span>
                     <span className="stat_label">Piercing</span>
                   </div>
                 </div>
@@ -236,12 +236,13 @@ const Home = () => {
                     <option value="">Select Service</option>
                     <option value="Permanent Tattoo">Permanent Tattoo</option>
                     <option value="Temporary Tattoo">Temporary Tattoo</option>
+                        <option value="Tattoo Removal">Tattoo Removal</option>
                     <option value="Peircing">Peircing</option>
                   </select>
                 </div>
               </div>
 
-              <div className="form_row">
+              {/* <div className="form_row">
                 <div className="form_group">
                   <label>EMAIL</label>
                   <input
@@ -267,9 +268,9 @@ const Home = () => {
                     <option value="Other">Other</option>
                   </select>
                 </div>
-              </div>
+              </div> */}
 
-              <div className="form_row">
+              {/* <div className="form_row">
                 <div className="form_group">
                   <label>TATTOO STYLE </label>
                   <input
@@ -280,9 +281,9 @@ const Home = () => {
                     placeholder="Enter Tattoo Style"
                   />
                 </div>
-              </div>
+              </div> */}
 
-              <div className="form_group full">
+              {/* <div className="form_group full">
                 <label>TATTOO DESCRIPTION</label>
                 <textarea
                   rows="4"
@@ -291,7 +292,7 @@ const Home = () => {
                   value={form.tattooDescription}
                   placeholder="Enter Your Tattoo Description"
                 ></textarea>
-              </div>
+              </div> */}
 
               <button
                 className="submit_btn"
