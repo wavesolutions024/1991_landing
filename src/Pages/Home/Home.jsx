@@ -57,6 +57,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import footerImg from "../../assets/footer.jpeg";
 import axios from "axios";
 import WhatsappButton from "../../Comps/WhatsappButton";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -115,6 +116,57 @@ const Home = () => {
   const [showConsultation, setShowConsultation] = useState(false);
   return (
     <>
+
+   import { Helmet } from "react-helmet";
+
+<Helmet>
+  <title>Best Tattoo Studio in Baner, Pune | Tattoo Artists</title>
+
+  <meta
+    name="description"
+    content="Looking for the best tattoo studio in Baner, Pune? Get creative custom tattoos, fine line tattoos, meaningful designs and professional tattoo services from experienced tattoo artists."
+  />
+
+  <meta
+    name="keywords"
+    content="best tattoo studio in Baner, tattoo studio in Baner, tattoo artist in Baner, best tattoo artist in Baner Pune, tattoo shop Baner, custom tattoos Baner, fine line tattoo Baner, permanent tattoo Baner, tattoo parlour in Baner Pune"
+  />
+
+  <meta
+    name="robots"
+    content="index, follow"
+  />
+
+  <link
+    rel="canonical"
+    href="https://1991tattoo.com/"
+  />
+
+  <meta
+    property="og:title"
+    content="Best Tattoo Studio in Baner, Pune"
+  />
+
+  <meta
+    property="og:description"
+    content="Discover unique tattoo designs and professional tattoo services in Baner, Pune. Bring your tattoo ideas to life with creative artists."
+  />
+
+  <meta
+    property="og:type"
+    content="website"
+  />
+
+  <meta
+    property="og:url"
+    content="https://1991tattoo.com/"
+  />
+
+  <meta
+    name="twitter:card"
+    content="summary_large_image"
+  />
+</Helmet>
       <div id="consultation" className="hero_parent parent bg-img-cover">
         <div className="hero_cont cont">
           <div className="hero_left">
@@ -126,7 +178,7 @@ const Home = () => {
             <p className="sub_title">Art That Stays With You</p>
 
             <h1 className="hero_title">
-              Thinking About<span> Getting Inked?</span>
+              Best Tattoo<span> Studio In Baner?</span>
               <br />
             </h1>
             <h1 className="hero_title_2">
@@ -180,12 +232,12 @@ const Home = () => {
               <button
                 className="btn2"
                 onClick={() => {
-                  document.getElementById("gallery").scrollIntoView({
+                  document.getElementById("offers").scrollIntoView({
                     behavior: "smooth",
                   });
                 }}
               >
-                VIEW OUR WORK
+                VIEW More Offer
               </button>
             </div>
           </div>
@@ -237,7 +289,7 @@ const Home = () => {
                     <option value="Permanent Tattoo">Permanent Tattoo</option>
                     <option value="Temporary Tattoo">Temporary Tattoo</option>
                         <option value="Tattoo Removal">Tattoo Removal</option>
-                    <option value="Peircing">Peircing</option>
+                    <option value="Piercing">Piercing</option>
                   </select>
                 </div>
               </div>
@@ -303,6 +355,29 @@ const Home = () => {
               </button>
             </form>
           </div>
+        </div>
+      </div>
+      <div class="offer_section parent" id="offers">
+        <div class="offer_section_cont cont">
+           <h2>
+            Recent Offers
+           </h2>
+         <div class="offer_list">
+            <p>
+              <strong>Get Up to 50%</strong> off on Half sleeves Tattoo
+           </p>
+            <p>
+              <strong>Get Up to 40%</strong> off on Full sleeves Tattoo
+           </p>
+
+            <p>
+              <strong>Get Up to 40%</strong> off on Piercing
+           </p>
+            <p>
+              <strong>Get Up to 50%</strong> off on Your First Tattoo
+           </p>
+
+         </div>
         </div>
       </div>
 

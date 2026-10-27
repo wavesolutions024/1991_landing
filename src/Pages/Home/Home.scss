@@ -73,13 +73,18 @@
           display: flex;
           align-items: center;
           gap: 12px;
-          min-width: 180px;
-          flex: 1 1 180px;
+          min-width: 300px;
+          flex: 1 1 300px;
           background: rgba(10, 10, 10, 0.82);
           border: 1px solid rgba(255, 255, 255, 0.12);
           border-radius: 14px;
           padding: 14px 16px;
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.18);
+
+          &:last-child{
+            min-width: auto !important;
+            flex: 1 1 auto !important;
+          }
         }
 
         .stat_icon {
@@ -244,6 +249,48 @@
     }
   }
 }
+
+.offer_section{
+  padding: 40px 0px;
+  background-color: white;
+
+
+  .offer_section_cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap);
+
+    h2{
+      border-bottom: 3px solid #c8a15a;
+      padding-bottom: 5px;
+
+    }
+
+    .offer_list{
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: var(--gap);
+
+
+      p{
+        padding: 10px 14px;
+        border: 1px solid black;
+        font-size: 18px;
+        cursor: pointer;
+
+        strong{
+          color: #c8a15a;
+        }
+      }
+    }
+  }
+}
+
 
 .about_parent {
   width: 100%;
