@@ -192,7 +192,7 @@ const Home = () => {
                     <FaPenNib />
                   </div>
                   <div className="stat_text">
-                    <span className="stat_value">50% off</span>
+                    <span className="stat_value">40% off</span>
                     <span className="stat_label">Half Sleeve</span>
                   </div>
                 </div>
@@ -202,7 +202,7 @@ const Home = () => {
                     <FaPaintBrush />
                   </div>
                   <div className="stat_text">
-                    <span className="stat_value">40% off</span>
+                    <span className="stat_value">51% off</span>
                     <span className="stat_label">Full Sleeve</span>
                   </div>
                 </div>
@@ -212,7 +212,7 @@ const Home = () => {
                     <FaRing />
                   </div>
                   <div className="stat_text">
-                    <span className="stat_value">40% off</span>
+                    <span className="stat_value">25% off</span>
                     <span className="stat_label">Piercing</span>
                   </div>
                 </div>
